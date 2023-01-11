@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <p class="h1">Formulario de contacto</p>
+        <form>
+            <div class="nombre">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="nombre" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div class="email">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Correo@empresa.com">
+            </div>
+                  
+              <div class="form-floating mb-3"> 
+                <div class="form-group">
+                 
+                  <p class="h6">Asunto</p>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>pedir presupuesto</option>
+                    <option>solicitar cita previa</option>
+                    <option>otros</option>
+                  </select>
+                </div>
+              </div>
+
+            <div class="group-check">
+                <label for="check">¿Cómo nos ha conocido?</label>
+                <div class="check">
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="checkboxEnLinea1" value="opcion_1"> Un amigo
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="checkboxEnLinea2" value="opcion_2"> Googleando
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="checkboxEnLinea3" value="opcion_3"> Buzoneo
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="checkboxEnLinea4" value="opcion_4"> Otros
+                    </label>
+                </div>
+                
+            </div>
+            <div class="mensaje"> 
+                <label for="comentarios">Escriba su mensaje</label>
+                <textarea class="form-control" rows="5" id="comentarios"></textarea>
+            </div>
+           
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">He leído y acepto el <a href="">aviso legas y la politica de privacidad</a></label>
+              </div>
+              <br><br>
+              
+              <input class="btn btn-primary" type="submit" value="Enviar">
+              <button type="button" class="btn btn-secondary">Cancelar</button>
+
+
+        </form>
+    </div>
+
+
+
+
+</body>
+    
+  
